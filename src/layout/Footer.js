@@ -1,3 +1,4 @@
+
 export default function Footer() {
   return(
     <footer className="page-footer">
@@ -8,5 +9,6 @@ export default function Footer() {
       </div>
     </div>
   </footer>
+      
   )
 }

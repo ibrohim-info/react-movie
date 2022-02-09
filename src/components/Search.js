@@ -1,4 +1,5 @@
 import React from "react";
+
 export default class Search extends React.Component{
 
   state = {
@@ -8,13 +9,13 @@ export default class Search extends React.Component{
 
   handleKey = (e) => {
     if(e.key === 'Enter') {
-      this.props.searchMovie(this.state.search, this.state.type);
+      this.props.searchMovies(this.state.search, this.state.type);
     }
   }
 
   handleFilter = (e) => {
     this.setState(() =>({type: e.target.dataset.type}), () => {
-      this.props.searchMovies(this.state.search, this.state.type)
+      this.props.searchMovies(this.state.search, this.state.type);
     })
   }
 
